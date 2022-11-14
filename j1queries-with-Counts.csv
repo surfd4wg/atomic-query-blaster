@@ -1,0 +1,6 @@
+FIND Host as e 
+FIND * with _createdOn > date.now -48 hours as e
+Find * with _source!='system-mapper' as e
+Find aws_s3_bucket with secureTransport != true as e
+Find aws_s3_bucket with encrypted != true as e
+FIND * WITH _id="6acce53b-7b49-43d0-bf51-e709fa4c60a5" (THAT RELATES TO *)? as e 
